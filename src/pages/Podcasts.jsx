@@ -25,7 +25,7 @@ export const Podcasts = () => {
     return (
 
         <main>
-            <h3>Podcasts</h3>
+            <h3>Comming Soon</h3>
         </main>
         
     )

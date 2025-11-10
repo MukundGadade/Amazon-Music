@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar/Navbar';
 import { Podcasts } from './pages/Podcasts';
 import { SignIn } from './pages/SignIn';
 import { SignUp } from './pages/SignUp';
+import { Library } from './pages/Library';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/podcasts' element={<Podcasts />} />
+        <Route path='/library' element={<Library />} />
         <Route path='/signin' element={<SignIn />} />
         <Route path='/signup' element={<SignUp />} />
       </Routes>
