@@ -45,7 +45,7 @@ export const SignIn = () => {
                 <input type="submit" value="Sign In" />
             </form>
             <p>Not an already registerd user?</p>
-            <button onClick={() => navigate('/signup')}>Sign Up Here!</button>
+            <button className="signup-btn" onClick={() => navigate('/signup')}>Sign Up Here!</button>
         </section>
     )
 

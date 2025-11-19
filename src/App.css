@@ -189,3 +189,13 @@ input {
     box-shadow: 0 0 0.75rem rgba(0, 179, 255, 0.759);
   }
 }
+
+.signup-btn {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  &:focus{
+    outline: none;
+    box-shadow: 0 0 0.75rem rgba(0, 179, 255, 0.759);
+  }
+}
