@@ -136,6 +136,34 @@ export const Home = () => {
                             thumbnail : 'https://freemusicarchive.org/image/?file=track_image%2FQdBrlfJZXYeXGpndxr14dx1SQ8v102d0RA6ahdQs.jpg&width=290&height=290&type=track',
                             artist : [{name : 'pat102'}],
                             audio_url : 'https://universal-soundbank.com/sounds/2990.mp3'
+                        },
+                        {
+                            _id : 18,
+                            title : 'Vlog Hip-Hop Music',
+                            thumbnail : 'https://cdn.pixabay.com/audio/2025/05/29/23-01-49-573_200x200.jpg',
+                            artist : [{name : 'Tunetank'}],
+                            audio_url : 'https://universal-soundbank.com/sounds/18876.mp3'
+                        },
+                        {
+                            _id : 19,
+                            title : 'Royalty Funk',
+                            thumbnail : 'https://linkstorage.linkfire.com/medialinks/images/63e390e7-226e-4ba6-8d5b-61ee8e12dc14/artwork-440x440.jpg',
+                            artist : [{name : 'LXNGVX'}, {name : 'Maestro Chives'}],
+                            audio_url : 'https://universal-soundbank.com/sounds/14119.mp3'
+                        },
+                        {
+                            _id : 20,
+                            title : 'Wings of Hope',
+                            thumbnail : 'https://cdn.pixabay.com/audio/2025/07/30/20-26-37-599_200x200.jpg',
+                            artist : [{name : 'ikoliks'}],
+                            audio_url : 'https://universal-soundbank.com/sounds/14247.mp3'
+                        },
+                        {
+                            _id : 21,
+                            title : 'Happy Fun',
+                            thumbnail : 'https://cdn.pixabay.com/audio/2025/08/29/11-03-10-500_200x200.jpg',
+                            artist : [{name : 'SoundGalleryByDmitryTaras'}],
+                            audio_url : 'https://universal-soundbank.com/sounds/6562.mp3'
                         }
                     ]
                 }
