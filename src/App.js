@@ -6,6 +6,8 @@ import { Podcasts } from './pages/Podcasts';
 import { SignIn } from './pages/SignIn';
 import { SignUp } from './pages/SignUp';
 import { Library } from './pages/Library';
+import { MusicProvider } from './Provider/MusicProvider';
+import { MusicPlayer } from './components/Music/MusicPlayer';
 // import PremiumFeatures from './components/PremiumFeatures';
 // import { Suspense, lazy, useState } from 'react';
 
@@ -29,13 +31,16 @@ function App() {
         </Suspense>
       } */}
 
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/podcasts' element={<Podcasts />} />
-        <Route path='/library' element={<Library />} />
-        <Route path='/signin' element={<SignIn />} />
-        <Route path='/signup' element={<SignUp />} />
-      </Routes>
+      <MusicProvider>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/podcasts' element={<Podcasts />} />
+          <Route path='/library' element={<Library />} />
+          <Route path='/signin' element={<SignIn />} />
+          <Route path='/signup' element={<SignUp />} />
+        </Routes>
+        <MusicPlayer />
+      </MusicProvider>
       <div style={{marginBottom : '6rem'}}></div>
     </div>
   );

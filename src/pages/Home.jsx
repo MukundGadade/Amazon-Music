@@ -2,8 +2,6 @@
 import { useEffect, useState } from "react"
 // import { getProjectIdConfig } from "../utils/config";
 import { MusicCard } from "../components/Music/MusicCard";
-import { MusicProvider } from "../Provider/MusicProvider";
-import { MusicPlayer } from "../components/Music/MusicPlayer";
 
 export const Home = () => {
 
@@ -189,13 +187,10 @@ export const Home = () => {
 
         isLoading ? <div>Loading...</div> : 
         (
-            musicList && (
-                <MusicProvider>
-                    <section className="musicList-Container">
-                        {musicList.map(({_id, ...music}) => <MusicCard key={_id}  {...music} />)}
-                    </section>
-                    <MusicPlayer />
-                </MusicProvider>
+            musicList && (   
+                <section className="musicList-Container">
+                    {musicList.map(({_id, ...music}) => <MusicCard key={_id}  {...music} />)}
+                </section>
             )
 
         )
