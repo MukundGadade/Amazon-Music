@@ -131,7 +131,7 @@ export const Home = () => {
                         {
                             _id : 17,
                             title : 'Emotional Piano',
-                            thumbnail : 'https://freemusicarchive.org/image/?file=track_image%2FQdBrlfJZXYeXGpndxr14dx1SQ8v102d0RA6ahdQs.jpg&width=290&height=290&type=track',
+                            thumbnail : 'https://png.pngtree.com/png-clipart/20240515/original/pngtree-play-music-promotional-video-thumbnail-post-ready-file-eps-png-image_15099137.png',
                             artist : [{name : 'pat102'}],
                             audio_url : 'https://universal-soundbank.com/sounds/2990.mp3'
                         },

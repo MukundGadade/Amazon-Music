@@ -199,3 +199,7 @@ input {
     box-shadow: 0 0 0.75rem rgba(0, 179, 255, 0.759);
   }
 }
+
+.require-field {
+  color: red;
+}

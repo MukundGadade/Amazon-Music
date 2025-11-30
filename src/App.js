@@ -8,6 +8,8 @@ import { SignUp } from './pages/SignUp';
 import { Library } from './pages/Library';
 import { MusicProvider } from './Provider/MusicProvider';
 import { MusicPlayer } from './components/Music/MusicPlayer';
+import { LoginProvider } from './Provider/LoginProvider';
+import { UserLoginModalProvider } from './Provider/UserLoginModalProvider';
 // import PremiumFeatures from './components/PremiumFeatures';
 // import { Suspense, lazy, useState } from 'react';
 
@@ -31,16 +33,21 @@ function App() {
         </Suspense>
       } */}
 
-      <MusicProvider>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/podcasts' element={<Podcasts />} />
-          <Route path='/library' element={<Library />} />
-          <Route path='/signin' element={<SignIn />} />
-          <Route path='/signup' element={<SignUp />} />
-        </Routes>
-        <MusicPlayer />
-      </MusicProvider>
+      <LoginProvider>
+        <MusicProvider>
+          <UserLoginModalProvider>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/podcasts' element={<Podcasts />} />
+              <Route path='/library' element={<Library />} />
+              <Route path='/signin' element={<SignIn />} />
+              <Route path='/signup' element={<SignUp />} />
+            </Routes>
+          
+            <MusicPlayer />
+          </UserLoginModalProvider>
+        </MusicProvider>
+      </LoginProvider>
       <div style={{marginBottom : '6rem'}}></div>
     </div>
   );
